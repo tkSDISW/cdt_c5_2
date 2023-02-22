@@ -7791,8 +7791,15 @@
               id="ce9718b6-2b95-4b58-8ff7-73e1ba0ca0cb" targetElement="#5ef45b25-5789-4121-bb5e-cfec11d65183"
               sourceElement="#097b64fd-b9a4-4608-89f2-030956136680"/>
           <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
-              id="9c18b552-1693-4388-aa61-aa267158d6bc" name="LORA " source="#f20ec49b-bd2e-4ab6-afe6-571eff111763"
-              target="#1d34110c-f601-4d5b-b3e5-c579124254fd" kind="FLOW">
+              id="9c18b552-1693-4388-aa61-aa267158d6bc" name="LORA " appliedPropertyValueGroups="#8399bf5e-b1ee-4d37-b2c8-3af0eb638324"
+              source="#f20ec49b-bd2e-4ab6-afe6-571eff111763" target="#1d34110c-f601-4d5b-b3e5-c579124254fd"
+              kind="FLOW">
+            <ownedPropertyValueGroups xsi:type="org.polarsys.capella.core.data.capellacore:PropertyValueGroup"
+                id="8399bf5e-b1ee-4d37-b2c8-3af0eb638324" name="Logical Properties">
+              <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:StringPropertyValue"
+                  id="06f694b1-2634-4dbd-a4b8-40274abd8a2a" name="LORAWAN Network"
+                  value="Helium"/>
+            </ownedPropertyValueGroups>
             <ownedComponentExchangeFunctionalExchangeAllocations xsi:type="org.polarsys.capella.core.data.fa:ComponentExchangeFunctionalExchangeAllocation"
                 id="15fd8f7b-cdd4-4014-9a04-3920758ad584" targetElement="#69140741-68f0-453d-858b-b6395ac5cdb0"
                 sourceElement="#9c18b552-1693-4388-aa61-aa267158d6bc"/>
@@ -8144,7 +8151,16 @@
                 id="b70cf831-c6fc-482e-944c-abec39cf6440" involved="#b2c9bee9-4073-476c-9357-5fc016f19816"/>
           </ownedPhysicalPath>
           <ownedPhysicalLinks xsi:type="org.polarsys.capella.core.data.cs:PhysicalLink"
-              id="a13d93ff-839d-46f2-a7fc-fed2b173cf6f" name="LORA" linkEnds="#ad469e28-a94f-40fa-8585-268fcd1fdfbe #f88d27b8-8f4c-4b8c-9eca-dff2636df7e7">
+              id="a13d93ff-839d-46f2-a7fc-fed2b173cf6f" name="LORA" appliedPropertyValueGroups="#e4d7b91d-3f07-49df-981d-25060d11d7aa"
+              linkEnds="#ad469e28-a94f-40fa-8585-268fcd1fdfbe #f88d27b8-8f4c-4b8c-9eca-dff2636df7e7">
+            <ownedPropertyValueGroups xsi:type="org.polarsys.capella.core.data.capellacore:PropertyValueGroup"
+                id="e4d7b91d-3f07-49df-981d-25060d11d7aa" name="Physical Properties">
+              <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:StringPropertyValue"
+                  id="c7ba9768-071f-4ba0-be68-9be531d9bbbe" name="Maximum Distance (m)"
+                  value="300.0"/>
+              <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:StringPropertyValue"
+                  id="ff5c0d7e-58f8-4f8f-92e8-5b898a9ecce0" name="Standard" value="ISO/IEC10725"/>
+            </ownedPropertyValueGroups>
             <ownedComponentExchangeAllocations xsi:type="org.polarsys.capella.core.data.fa:ComponentExchangeAllocation"
                 id="025efaac-a8de-4cd9-b0ab-a178f47531b5" targetElement="#9c18b552-1693-4388-aa61-aa267158d6bc"
                 sourceElement="#a13d93ff-839d-46f2-a7fc-fed2b173cf6f"/>
@@ -8164,7 +8180,17 @@
           <ownedPhysicalLinks xsi:type="org.polarsys.capella.core.data.cs:PhysicalLink"
               id="af8d9743-7c6e-423b-bc26-388aaca51cd5" name="WIFI" linkEnds="#b51f595f-73f0-4a99-a4e5-5fe230769d30 #ab06fdec-60e0-4e56-8846-dda71e1d7d68"/>
           <ownedPhysicalLinks xsi:type="org.polarsys.capella.core.data.cs:PhysicalLink"
-              id="a6a47da1-8ebc-4ec2-b5ee-79fd8db421ea" name="Blue tooth" linkEnds="#3ff25fb3-e26d-4a69-843c-d2d890026c94 #4b6f1582-dd3e-4cf0-becd-fd674034d0c8">
+              id="a6a47da1-8ebc-4ec2-b5ee-79fd8db421ea" name="Blue tooth" appliedPropertyValueGroups="#17274792-9ab7-4e75-a8de-4105d5d38898"
+              linkEnds="#3ff25fb3-e26d-4a69-843c-d2d890026c94 #4b6f1582-dd3e-4cf0-becd-fd674034d0c8">
+            <ownedPropertyValueGroups xsi:type="org.polarsys.capella.core.data.capellacore:PropertyValueGroup"
+                id="17274792-9ab7-4e75-a8de-4105d5d38898" name="Physical Properties">
+              <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:StringPropertyValue"
+                  id="805e863f-ef4b-4dcd-bca4-892b4ca1618d" name="Maximum Distance (m)"
+                  value="2.0"/>
+              <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:StringPropertyValue"
+                  id="48764c16-78ef-49fe-9f37-b05a8d1c46a0" name="StringPropertyValue 2"
+                  summary="Standard" value="BLUETOOTH CORE SPECIFICATION Version 5.3"/>
+            </ownedPropertyValueGroups>
             <ownedComponentExchangeAllocations xsi:type="org.polarsys.capella.core.data.fa:ComponentExchangeAllocation"
                 id="723dbc7c-b1ef-4be5-94d8-72c71c2ebb83" targetElement="#6a55dd77-1ac8-4d27-be57-b1caf64c3cf1"
                 sourceElement="#a6a47da1-8ebc-4ec2-b5ee-79fd8db421ea"/>
@@ -8596,9 +8622,6 @@
             </ownedFeatures>
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
                 id="01dcc99d-086f-4408-a2f5-7d8122fe48ab" name="PP 3">
-              <ownedComponentPortAllocations xsi:type="org.polarsys.capella.core.data.fa:ComponentPortAllocation"
-                  id="272c5901-77cd-4b80-bb29-75c1d529a94b" targetElement="#c4749d70-87e4-4200-bc9e-fd30e3637d06"
-                  sourceElement="#01dcc99d-086f-4408-a2f5-7d8122fe48ab"/>
               <ownedComponentPortAllocations xsi:type="org.polarsys.capella.core.data.fa:ComponentPortAllocation"
                   id="92a467e5-7eed-4a36-9c04-388606d36aff" targetElement="#3d250734-6b96-4493-8151-fff3c8e02091"
                   sourceElement="#01dcc99d-086f-4408-a2f5-7d8122fe48ab"/>
