@@ -7682,7 +7682,7 @@
         <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="eef5b359-3a01-4daa-b198-81a9e1aebb02"
             name="Athlete" abstractType="#f5231e05-e34c-4ad7-ab77-f36b395af9ba"/>
         <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="2f6b50b6-95df-4d43-92cd-c699d23ec255"
-            name="Instituion" abstractType="#089bb8bd-12f1-458a-a2c6-edf1804612a8"/>
+            name="Institution of Learning" abstractType="#089bb8bd-12f1-458a-a2c6-edf1804612a8"/>
         <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="a9b0643a-1615-48ec-a87f-88d4524d2214"
             name="Parent" abstractType="#30d92936-0654-4201-808c-54dac483d054"/>
         <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
@@ -7733,6 +7733,9 @@
             target="#3d250734-6b96-4493-8151-fff3c8e02091" kind="FLOW">
           <ownedComponentExchangeFunctionalExchangeAllocations xsi:type="org.polarsys.capella.core.data.fa:ComponentExchangeFunctionalExchangeAllocation"
               id="2ae9d10f-dbb3-4dcf-a09c-6ee52f565462" targetElement="#b4f7ef4b-c36e-4150-bd3b-d844d16b02ba"
+              sourceElement="#d3ff6ff7-8a77-4063-b64f-81586525ac97"/>
+          <ownedComponentExchangeFunctionalExchangeAllocations xsi:type="org.polarsys.capella.core.data.fa:ComponentExchangeFunctionalExchangeAllocation"
+              id="a3f7f885-c12a-42ce-a419-1cdbfbb08d7d" targetElement="#9cf0b319-b000-4762-a282-3c1bc1f8d9f2"
               sourceElement="#d3ff6ff7-8a77-4063-b64f-81586525ac97"/>
         </ownedComponentExchanges>
         <ownedPhysicalLinks xsi:type="org.polarsys.capella.core.data.cs:PhysicalLink"
@@ -8360,6 +8363,9 @@
               <ownedPortAllocations xsi:type="org.polarsys.capella.core.data.information:PortAllocation"
                   id="ac3d98f6-be73-4c58-abe4-300e3c1852e0" targetElement="#8874f47d-ad27-4cdd-82f8-2db4aef538f6"
                   sourceElement="#3d250734-6b96-4493-8151-fff3c8e02091"/>
+              <ownedPortAllocations xsi:type="org.polarsys.capella.core.data.information:PortAllocation"
+                  id="4daf370b-0071-41f6-a5b5-c3ebe44d0af0" targetElement="#394fd7cb-3366-487b-9053-5a047a6cf669"
+                  sourceElement="#3d250734-6b96-4493-8151-fff3c8e02091"/>
             </ownedFeatures>
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
                 id="c4749d70-87e4-4200-bc9e-fd30e3637d06" name="CP 2" orientation="OUT"
@@ -8599,15 +8605,8 @@
                 sourceElement="#8749509f-823f-4bf7-994a-dd9fb826ad5d"/>
           </ownedPhysicalComponents>
           <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-              id="b5f0c860-ad6c-4cf3-9b6d-8c21bfc8fd03" name="Helmet" nature="NODE">
-            <ownedConstraints xsi:type="org.polarsys.capella.core.data.capellacore:Constraint"
-                id="ce0e63f9-2bef-4dfa-a5a8-49aae04ec04e" name="" constrainedElements="#b5f0c860-ad6c-4cf3-9b6d-8c21bfc8fd03">
-              <ownedSpecification xsi:type="org.polarsys.capella.core.data.information.datavalue:OpaqueExpression"
-                  id="b8649140-f1bf-4a6c-8064-66ffbc24f569">
-                <bodies></bodies>
-                <languages>capella:linkedText</languages>
-              </ownedSpecification>
-            </ownedConstraints>
+              id="b5f0c860-ad6c-4cf3-9b6d-8c21bfc8fd03" description="&#xA;&#xA;&lt;p>A helmet is a form of protective gear worn to protect the head from injury. Helmets are a common piece of safety equipment in many sports, and are also used by military personnel, construction workers and cyclists. The most common form of helmet is made of a hard, durable outer shell and a soft, cushioned inner liner. The outer shell is designed to absorb and distribute the force of an impact, while the inner liner provides cushioning and shock absorption. The helmet also typically has a chin strap and straps to keep the helmet snugly in place. &lt;sup>1&lt;/sup>&lt;/p>&#xA;&#xA;&lt;p>In addition to providing protection from physical impacts, helmets are also designed to protect the head from exposure to hazardous materials. This includes protection from heat, cold, fire, and chemicals. Helmets come in a variety of shapes and sizes and can be made from different materials, including plastic, Kevlar, carbon fiber, and fiberglass. &lt;sup>2&lt;/sup>&lt;/p>&#xA;&#xA;&lt;p>References:&lt;/p>&#xA;&lt;p>1. &quot;Helmet Safety,&quot; The American Academy of Pediatrics, February 2015, &lt;em>https://www.aap.org/en-us/about-the-"
+              name="Helmet" nature="NODE">
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="056aec13-eb94-4afa-8a62-c03782b46d0a"
                 name="Sensor" abstractType="#8a1a4239-0407-43b0-8cb0-38eec5df2039">
               <ownedDeploymentLinks xsi:type="org.polarsys.capella.core.data.pa.deployment:PartDeploymentLink"
@@ -8639,7 +8638,8 @@
                   sourceElement="#bc095b8c-942f-4d94-92d7-f77914c9fd34"/>
             </ownedPhysicalLinks>
             <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-                id="8a1a4239-0407-43b0-8cb0-38eec5df2039" name="Sensor" nature="NODE">
+                id="8a1a4239-0407-43b0-8cb0-38eec5df2039" description="&lt;p>A &lt;b>sensor&lt;/b> is a device that detects and responds to some type of input from the physical environment. The specific input could be light, heat, motion, moisture, pressure, or any one of a great number of other environmental phenomena. The output is generally a signal that is converted to human-readable display at the sensor location or transmitted electronically over a network for reading or further processing. &lt;sup>1&lt;/sup> Sensors are used in everyday objects such as touch-sensitive elevator buttons, lamps which dim or brighten by touching the base and, of course, thermostats. Other common examples include wheel speed sensors in ABS braking systems, pressure sensors in air bags, oxygen sensors in exhaust systems, and the temperature sensors in computer systems. &lt;sup>2&lt;/sup> &lt;sup>1&lt;/sup>Wikipedia: &lt;a href=&quot;http://en.wikipedia.org/wiki/Sensor&quot;>Sensor&lt;/a>&lt;br />&#xA;&lt;sup>2&lt;/sup>Electronics-Tutorials: &lt;a href=&quot;http://www.electronics-tutorials.ws/io/io_3.html&quot;>Introduction to Sensors&lt;/a>&lt;/p>&#xA;"
+                name="Sensor" nature="NODE">
               <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
                   id="9a2aaf72-abb5-4464-99c3-ec238243fca6" name="PP 1">
                 <ownedComponentPortAllocations xsi:type="org.polarsys.capella.core.data.fa:ComponentPortAllocation"
@@ -8653,7 +8653,11 @@
                     sourceElement="#f88d27b8-8f4c-4b8c-9eca-dff2636df7e7"/>
               </ownedFeatures>
               <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
-                  id="3ff25fb3-e26d-4a69-843c-d2d890026c94" name="PP 3">
+                  id="3ff25fb3-e26d-4a69-843c-d2d890026c94" name="To IPAD" description="&lt;p>PP3 Description&lt;/p>&#xA;"
+                  appliedPropertyValues="#7973549c-cc30-4745-ab97-599b554e7fa9">
+                <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:StringPropertyValue"
+                    id="7973549c-cc30-4745-ab97-599b554e7fa9" name="Communication Type"
+                    value="Bluetooth"/>
                 <ownedComponentPortAllocations xsi:type="org.polarsys.capella.core.data.fa:ComponentPortAllocation"
                     id="e0e9c8d4-fd7a-4d02-85ef-a43989bbbe8c" targetElement="#a6e2de6b-26d9-44b8-86e3-856fd713c956"
                     sourceElement="#3ff25fb3-e26d-4a69-843c-d2d890026c94"/>
@@ -8678,7 +8682,8 @@
             </ownedPhysicalComponents>
           </ownedPhysicalComponents>
           <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-              id="367ff96b-152e-4c52-82ec-fd1e1a733a2e" name="LORAWAN Gateway" nature="NODE">
+              id="367ff96b-152e-4c52-82ec-fd1e1a733a2e" description="&#xA;&#xA;&lt;p>A LoRaWAN gateway is a specialized networking device that enables communication between low-power devices that use the LoRaWAN protocol and a local network or the Internet. It is designed to extend the reach of LoRaWAN networks in areas where it is difficult or impossible to install traditional cellular networks. The gateway acts as a bridge between end-devices and the network server, by relaying data between the two. It also performs encryption and authentication, ensuring secure communication.&lt;/p>&#xA;&#xA;&lt;p>A LoRaWAN gateway typically comprises a radio transceiver, antenna, and a computer running a LoRaWAN gateway software stack. It is capable of receiving and sending data from any device in its coverage area. The gateway relays the data to the network server or other devices in the network, as well as providing data back to the end-device if required. The gateway can also be used to configure and manage the devices in the network.&lt;/p>&#xA;&#xA;&lt;p>The range of a LoRaWAN gateway depends on its location and antenna type. Generally, a LoRaWAN gateway can cover a range of up to 10km, depending on the environment. In addition, the gateway can be used to connect"
+              name="LORAWAN Gateway" nature="NODE">
             <ownedConstraints xsi:type="org.polarsys.capella.core.data.capellacore:Constraint"
                 id="19554a79-1752-4709-815b-854da02965f2" name="" constrainedElements="#367ff96b-152e-4c52-82ec-fd1e1a733a2e">
               <ownedSpecification xsi:type="org.polarsys.capella.core.data.information.datavalue:OpaqueExpression"
@@ -8707,21 +8712,24 @@
             </ownedFeatures>
           </ownedPhysicalComponents>
           <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-              id="dbacd8d5-e14c-4bd0-8ed0-cff9429b28cf" name="Modem" nature="NODE">
+              id="dbacd8d5-e14c-4bd0-8ed0-cff9429b28cf" description="&#xA;&#xA;&lt;p>&lt;strong>Modem:&lt;/strong> A modem (modulator-demodulator) is a device that converts digital data into analog signals for transmission over a telephone line and then back to digital data for reception. It is used to connect computers to the Internet, enabling access to the World Wide Web, email and other services. Modems come in a variety of speeds, including 56K, ISDN, ADSL, and cable. Modems are available for different types of connection, including USB, Ethernet, and PCI. The cost of modems varies depending on the speed and type of connection. (&lt;a href=&quot;https://en.wikipedia.org/wiki/Modem&quot;>Wikipedia&lt;/a>)&lt;/p>"
+              name="Modem" nature="NODE">
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
                 id="32b6c872-7613-4bf1-8034-a8cc5e9f7b33" name="To Router"/>
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
                 id="6be24212-4309-4560-8589-9abdc39b6547" name="To ISP"/>
           </ownedPhysicalComponents>
           <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-              id="96152406-d78e-4d40-8850-c5f395adace7" name="ISP" nature="NODE">
+              id="96152406-d78e-4d40-8850-c5f395adace7" description="&#xA;&#xA;&lt;p>An Internet Service Provider (ISP) is a company that provides access to the Internet to individuals and organizations. ISPs typically offer a variety of services such as dial-up access, high-speed broadband, and web hosting. ISPs provide a range of services, including email, web hosting, and file transfer, as well as access to the World Wide Web. ISPs typically use a variety of technologies such as fiber optics, cable, DSL, and wireless to provide access to the Internet.&lt;/p>&#xA;&#xA;&lt;p>References:&lt;/p>&#xA;&#xA;&lt;p>1. &lt;a href=&quot;https://en.wikipedia.org/wiki/Internet_service_provider&quot; rel=&quot;nofollow&quot;>Internet Service Provider&lt;/a>. Wikipedia. Accessed August 3, 2020.&lt;/p>&#xA;&#xA;&lt;p>2. &lt;a href=&quot;https://www.lifewire.com/what-is-an-internet-service-provider-isp-3485981&quot; rel=&quot;nofollow&quot;>What is an Internet Service Provider (ISP)&lt;/a>. Lifewire. Accessed August 3, 2020.&lt;/p>"
+              name="ISP" nature="NODE">
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
                 id="4d140c90-85d7-4181-965e-793c436b9b41" name="To Modem"/>
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
                 id="47457943-d2f4-4b9f-b5e5-c14bf8775c6e" name="To Cloud"/>
           </ownedPhysicalComponents>
           <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-              id="e230c091-9d28-443f-9063-e35ce6c1c8d9" name="Router" nature="NODE">
+              id="e230c091-9d28-443f-9063-e35ce6c1c8d9" description="&#xA;&#xA;A &lt;strong>Router&lt;/strong> is a networking device that forwards data packets between computer networks. Routers are used to connect multiple networks together so that users on one network can communicate with users on another network. Routers use routing protocols to direct the traffic and make decisions about where to send packets of data. Routers can also be used to connect a local area network (LAN) to the Internet or to provide a wireless connection to a network. &lt;sup>[1]&lt;/sup> &#xA;&#xA;Routers can provide additional features such as network address translation (NAT), firewall protection, and Quality of Service (QoS) to ensure that critical applications receive the bandwidth they need. Routers are often used in businesses to connect local networks to the Internet and to provide secure access to remote networks. &lt;sup>[2]&lt;/sup>&#xA;&#xA;&lt;sup>[1]&lt;/sup> https://www.lifewire.com/what-is-a-router-817547&#xA;&lt;sup>[2]&lt;/sup> https://www.cisco.com/c/en/us/solutions/enterprise-networks/what-is-router.html"
+              name="Router" nature="NODE">
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
                 id="ea442f3f-befd-45d2-9d82-44cbe2e1fdaa" name="TO LORA CAT5"/>
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
@@ -8734,7 +8742,8 @@
                 id="b51f595f-73f0-4a99-a4e5-5fe230769d30" name="To WIFI Network"/>
           </ownedPhysicalComponents>
           <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-              id="7e5dbe1a-9b1f-4e9a-8e88-058dd4a52000" name="IPAD" nature="NODE">
+              id="7e5dbe1a-9b1f-4e9a-8e88-058dd4a52000" description="&#xA;&#xA;The &lt;strong>iPad&lt;/strong> is a line of &lt;em>tablet computers&lt;/em> designed and marketed by Apple Inc., which run the iOS mobile operating system. The first iPad was released on April 3, 2010; the most recent iPad models are the 7th generation iPad, released on September 30, 2019; the 5th generation iPad mini, released on March 18, 2019; and the 3rd generation iPad Air, released on March 18, 2019. All iPad models include a 9.7-inch multi-touch screen, a front-facing camera, and a rear-facing camera. &#xA;&#xA;The iPad is a versatile device that can be used for a variety of purposes, including web browsing, gaming, taking photos and videos, and accessing applications. It also includes features such as FaceTime, iCloud, and Apple Pay, which allow users to make purchases and communicate with their contacts. &#xA;&#xA;&lt;cite>&#xA;Apple. (2020). iPad - Apple. Retrieved from https://www.apple.com/ipad/&#xA;&lt;/cite>"
+              name="IPAD" nature="NODE">
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
                 id="9f106fa4-309d-413e-89de-a5161596e7b9" name="PP 1">
               <ownedComponentPortAllocations xsi:type="org.polarsys.capella.core.data.fa:ComponentPortAllocation"
@@ -8776,8 +8785,8 @@
             </ownedFeatures>
           </ownedPhysicalComponents>
           <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-              id="31da7e7c-78b2-4f22-8ea8-0156e5311bf9" name="Cellular Network ISP"
-              nature="NODE">
+              id="31da7e7c-78b2-4f22-8ea8-0156e5311bf9" description="&#xA;&#xA;&lt;p>&lt;strong>Cellular Network ISP:&lt;/strong> A cellular network ISP provides services to connect to the internet using a cellular network. Services can include 3G, 4G, LTE, and 5G, and provide wireless internet access to users on the go. The speeds of the network can vary depending on the coverage in the area and the type of cellular network being used. Cellular networks are the most popular type of ISP, as they are accessible virtually anywhere, and most phones and other devices have the necessary hardware to connect. &lt;ref>https://www.lifewire.com/what-is-a-cellular-network-isp-4680007 &lt;/ref> &lt;/p>"
+              name="Cellular Network ISP" nature="NODE">
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
                 id="55377e60-4611-47f0-8181-71c91888b1d3" name="PP 1"/>
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
@@ -8869,8 +8878,8 @@
           </ownedPhysicalComponents>
         </ownedPhysicalComponents>
         <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-            id="5776ed68-d9cd-4bb9-ba4b-75c69ee8567f" name="Trainer" actor="true"
-            nature="NODE">
+            id="5776ed68-d9cd-4bb9-ba4b-75c69ee8567f" description="&#xA;&#xA;&lt;p>A &lt;b>Trainer&lt;/b> is a professional who designs and implements fitness programs tailored to the individual needs of their clients. They are knowledgeable in nutrition, exercise physiology, and biomechanics, and understand how to use exercise to improve overall health and wellness. Trainers typically assess a client's current fitness level and create individualized plans that incorporate strength training, flexibility, and cardiovascular exercise. They also provide guidance on healthier eating habits and lifestyle changes. Trainers are certified and have a thorough understanding of anatomy and physiology, as well as injury prevention and management.  &lt;/p>&#xA;&#xA;&lt;p>References:&lt;/p>&#xA;&lt;ul>&#xA;  &lt;li>American College of Sports Medicine. (2017). Personal Trainer: Job Description. Retrieved from https://www.acsm.org/careers/personal-trainer-job-description&lt;/li>&#xA;  &lt;li>Gym and Fitness. (2020). What Does a Personal Trainer Do? Retrieved from https://www.gymandfitness.com/what-does-a-personal-trainer-do&lt;/li>&#xA;&lt;/ul>"
+            name="Trainer" actor="true" nature="NODE">
           <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
               id="972fe5cf-2bd8-4a6e-be23-f7cab9f3765c" targetElement="#0dcfab07-febd-4a99-aafb-ee9e52837803"
               sourceElement="#4a682a23-78b8-4406-8b3c-bbd1b8d63808"/>
@@ -8966,8 +8975,8 @@
               sourceElement="#5776ed68-d9cd-4bb9-ba4b-75c69ee8567f"/>
         </ownedPhysicalComponents>
         <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-            id="f5231e05-e34c-4ad7-ab77-f36b395af9ba" name="Athlete" actor="true"
-            nature="NODE">
+            id="f5231e05-e34c-4ad7-ab77-f36b395af9ba" description="&#xA;&#xA;&lt;p>&lt;strong>Athlete&lt;/strong>&lt;/p>&#xA;&lt;p>An athlete is an individual who competes in physical sporting events. Athletes can be professional or amateur, and participate in a wide variety of sports, ranging from individual and team sports to extreme and adventure sports. Athletes are usually well-conditioned and have superior physical strength and endurance. They are also typically highly trained and have a strong commitment to their sport. Athletes must be mentally and physically prepared for the demands of their sport and have a passion for competition. (&lt;a href=&quot;https://www.britannica.com/topic/athlete&quot;>Britannica, 2020&lt;/a>; &lt;a href=&quot;https://en.wikipedia.org/wiki/Athlete&quot;>Wikipedia, 2020&lt;/a>).&lt;/p>"
+            name="Athlete" actor="true" nature="NODE">
           <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
               id="c1469a29-6267-422b-baa1-904132eca530" targetElement="#999175cd-ee3c-41e0-bb24-9015e804f06b"
               sourceElement="#7af49bcc-dc68-47a0-88c1-35306f198874"/>
@@ -9031,6 +9040,9 @@
             <ownedPortAllocations xsi:type="org.polarsys.capella.core.data.information:PortAllocation"
                 id="6882fa04-9571-4ed0-8953-40a4266b7f5d" targetElement="#9c2e2b7f-6f7b-4294-997e-97bf1cbfff81"
                 sourceElement="#ee50a275-eea6-4563-93e4-e764248740f7"/>
+            <ownedPortAllocations xsi:type="org.polarsys.capella.core.data.information:PortAllocation"
+                id="29bd489a-d019-4ce7-95c8-65831605548c" targetElement="#10ac3466-fbd0-47ff-83a4-429134583ed0"
+                sourceElement="#ee50a275-eea6-4563-93e4-e764248740f7"/>
           </ownedFeatures>
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
               id="69797889-e194-4afa-aea8-dcaa65b6376d" name="PP 5"/>
@@ -9041,8 +9053,8 @@
               sourceElement="#f5231e05-e34c-4ad7-ab77-f36b395af9ba"/>
         </ownedPhysicalComponents>
         <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-            id="089bb8bd-12f1-458a-a2c6-edf1804612a8" name="Instituion" actor="true"
-            nature="NODE">
+            id="089bb8bd-12f1-458a-a2c6-edf1804612a8" description="&#xA;&#xA;&lt;p>An Institution of Learning is a facility dedicated to providing educational programs and services to its students. It can range from a school, college, university, academy, or other type of educational institution. A typical institution of learning includes classrooms, laboratories, libraries, and other facilities necessary for providing education. It also typically has faculty and staff members to help provide instruction and support to students. The purpose of such an institution is to provide a safe, secure, and nurturing environment for students to learn and grow. &lt;/p>&#xA;&#xA;&lt;p>References:&#xA;&lt;ul>&#xA;  &lt;li>Begay, M. (2020). What Is an Institution of Learning?. Investopedia. Retrieved from https://www.investopedia.com/terms/i/institution-of-learning.asp&lt;/li>&#xA;  &lt;li>Bartolomé, A. (2020). What Is an Institution of Learning?. Verywell Family. Retrieved from https://www.verywellfamily.com/what-is-an-institution-of-learning-3144331&lt;/li>&#xA;&lt;/ul>&#xA;&lt;/p>"
+            name="Institution of Learning" actor="true" nature="NODE">
           <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
               id="b8e1b1c6-f777-4678-819f-6d0b9f0d70a6" targetElement="#227d6f93-b522-45a1-a634-e2f1da9d5dde"
               sourceElement="#a846a6a0-a1c6-4593-95ba-67ff56136c2c"/>
@@ -9075,7 +9087,8 @@
               sourceElement="#089bb8bd-12f1-458a-a2c6-edf1804612a8"/>
         </ownedPhysicalComponents>
         <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-            id="30d92936-0654-4201-808c-54dac483d054" name="Parent" actor="true" nature="NODE">
+            id="30d92936-0654-4201-808c-54dac483d054" description="&#xA;&#xA;&lt;p>A parent is someone who takes on the responsibility of raising and caring for a child or children. As a parent, they provide physical and emotional support, guidance, and discipline to their children. Parents are expected to nurture and prepare their children for the future. &lt;sup>[1](#myfootnote1)&lt;/sup>&lt;/p>&#xA;&#xA;&lt;p>Parenting involves teaching children lessons on life and morality, such as teaching them how to interact with others in society, providing them with guidance in making important decisions, and setting rules and boundaries. Parents are also responsible for providing financial and emotional stability for their children. &lt;sup>[2](#myfootnote2)&lt;/sup>&lt;/p>&#xA;&#xA;&lt;p>Parenting is one of the most challenging and rewarding roles that a person can take on. It requires a great deal of dedication, patience, and love. Being a parent can be both a difficult and rewarding experience, and it is ultimately up to the parent to decide what type of parent they want to be. &lt;sup>[3](#myfootnote3)&lt;/sup>&lt;/p>&#xA;&#xA;&lt;p>&#xA;&#xA;&lt;sup id=&quot;myfootnote1&quot;>[1] (https://www.verywellfamily.com/what"
+            name="Parent" actor="true" nature="NODE">
           <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
               id="aa895912-27f4-4b62-8af8-ed92bf8ce63b" targetElement="#d5a68885-5aec-4d46-9b4b-2808c5080884"
               sourceElement="#08ff518f-7743-467e-bfe8-e89da2de9a09"/>
