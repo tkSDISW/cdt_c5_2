@@ -6250,7 +6250,7 @@
             </ownedFunctions>
             <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
                 id="b2ec1273-6558-4c43-ae8f-be1a6f91c817" sid="b2ec1273-6558-4c43-ae8f-be1a6f91c817"
-                name="Look for bluetooth connect">
+                name="Look for bluetooth connect" availableInStates="#05c408e9-71d6-4d30-91a0-4623ee814184">
               <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                   id="0bdfd386-6ecf-49ac-9c4b-c2485852fbe1" sid="0bdfd386-6ecf-49ac-9c4b-c2485852fbe1"
                   name="FIP 1">
@@ -6785,7 +6785,7 @@
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
               id="54b57a3d-6e22-49c6-ac28-7bcbd2cace2e" sid="54b57a3d-6e22-49c6-ac28-7bcbd2cace2e"
-              name="Device Detects Activity">
+              name="Device Detects Activity" availableInStates="#91d3b25e-c94c-4ef6-a855-c7d5bf52be70">
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                 id="b59843c7-6296-4cde-8c5f-154faa2ce9fe" sid="b59843c7-6296-4cde-8c5f-154faa2ce9fe"
                 name="inHit" incomingExchangeItems="#0533d79e-43e8-4b2f-a1b7-265fa7809876">
@@ -7523,7 +7523,7 @@
           </ownedFunctionalExchanges>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
               id="7ce6b399-9ac1-4a1b-b0d8-408b5659bcd3" sid="7ce6b399-9ac1-4a1b-b0d8-408b5659bcd3"
-              name="ID" target="#5e2d6b17-61ea-4d78-b2db-5c4e93ebc533" source="#ac4c5e27-3879-4795-a4e2-ffbb2880563b">
+              name="ID Inserted" target="#5e2d6b17-61ea-4d78-b2db-5c4e93ebc533" source="#ac4c5e27-3879-4795-a4e2-ffbb2880563b">
             <ownedFunctionalExchangeRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchangeRealization"
                 id="cfda993b-6784-4953-9d10-0dc00726ae7e" targetElement="#00d758e5-8a75-4f64-b22e-78cc1cadaeb8"
                 sourceElement="#7ce6b399-9ac1-4a1b-b0d8-408b5659bcd3"/>
@@ -7531,7 +7531,7 @@
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
               id="7b17df23-af62-44ed-acba-7747c33550e5" sid="7b17df23-af62-44ed-acba-7747c33550e5"
               name="Helmet Motion" target="#11af4446-55c2-49af-ada4-f57b73412d08"
-              source="#3555ee84-1c59-4bee-94cd-80d186c2b306">
+              source="#3555ee84-1c59-4bee-94cd-80d186c2b306" exchangedItems="#0533d79e-43e8-4b2f-a1b7-265fa7809876">
             <ownedFunctionalExchangeRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchangeRealization"
                 id="47596574-11d8-4626-8e0b-684a51d0cc57" targetElement="#56e3f648-295a-488f-b3d0-b6c6fd35f619"
                 sourceElement="#7b17df23-af62-44ed-acba-7747c33550e5"/>
@@ -7707,7 +7707,7 @@
               id="a367259a-8c5d-4679-a322-ee0fa1ab9cb1" name="Activity" target="#08dff0db-0a1a-4c6e-b8f2-1fbd252dc3bb"
               source="#2f5f4edf-a493-476d-9d7d-5343404e2b94"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
-              id="95185f6a-8c82-4db9-a48c-b51e468be017" name="ID" target="#c03be4ac-6cbe-42af-be37-dac118ddab48"
+              id="95185f6a-8c82-4db9-a48c-b51e468be017" name="ID Removed" target="#c03be4ac-6cbe-42af-be37-dac118ddab48"
               source="#a1d6bd71-38cb-4540-8e5c-aa8005dd29ef"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
               id="9ef1c681-b828-4413-96e1-48af3a681b0d" name="Disable" target="#3c3b302e-6f18-4d7e-b090-d1b7ea37c7dd"
@@ -8943,53 +8943,90 @@
                 id="633d5e3c-7805-4359-8e84-69ba5c45d590" name="StateMachine 1">
               <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
                   id="f46e1efd-0701-4b59-a95c-4229deb2dee4" name="Default Region"
-                  involvedStates="#d36efc17-2029-47ee-aa31-b183b124def3 #91d3b25e-c94c-4ef6-a855-c7d5bf52be70 #05c408e9-71d6-4d30-91a0-4623ee814184">
+                  involvedStates="#d36efc17-2029-47ee-aa31-b183b124def3 #ea28a1f0-4708-4829-97d0-95c53d6eba53 #2ad2814f-4677-4333-a6b1-244b6d9b1968">
                 <ownedStates xsi:type="org.polarsys.capella.core.data.capellacommon:InitialPseudoState"
-                    id="d36efc17-2029-47ee-aa31-b183b124def3" name="Initial 1"/>
+                    id="d36efc17-2029-47ee-aa31-b183b124def3" name="Init Sensing Device"/>
                 <ownedStates xsi:type="org.polarsys.capella.core.data.capellacommon:State"
-                    id="91d3b25e-c94c-4ef6-a855-c7d5bf52be70" name="Waitng for Hit">
+                    id="ea28a1f0-4708-4829-97d0-95c53d6eba53" name="Off">
                   <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
-                      id="fa6571a0-60f1-4b90-8ee9-b982eb0614d6" name="region"/>
+                      id="ac55e361-1539-4dfe-af4c-e422b09bfc62" name="region"/>
                 </ownedStates>
                 <ownedStates xsi:type="org.polarsys.capella.core.data.capellacommon:State"
-                    id="05c408e9-71d6-4d30-91a0-4623ee814184" name="Hit Received">
+                    id="2ad2814f-4677-4333-a6b1-244b6d9b1968" name="On" referencedStates="#6df20e41-170d-480b-bece-1e0a84f8a118 #91d3b25e-c94c-4ef6-a855-c7d5bf52be70 #05c408e9-71d6-4d30-91a0-4623ee814184">
                   <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
-                      id="0a153e08-f83f-423d-acd2-8f68c48f7c66" name="region"/>
-                </ownedStates>
-                <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
-                    id="9d3f53be-c781-4bb5-89ce-ce5ae8459e56" triggerDescription=""
-                    source="#91d3b25e-c94c-4ef6-a855-c7d5bf52be70" target="#05c408e9-71d6-4d30-91a0-4623ee814184"
-                    effect="#54b57a3d-6e22-49c6-ac28-7bcbd2cace2e" triggers="#0533d79e-43e8-4b2f-a1b7-265fa7809876"/>
-                <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
-                    id="92c2b15b-6d88-485e-99ac-7f4549a1951a" triggerDescription=""
-                    guard="#a51c1882-8d8e-42c6-96f3-cb7bb1cab89b" source="#05c408e9-71d6-4d30-91a0-4623ee814184"
-                    target="#91d3b25e-c94c-4ef6-a855-c7d5bf52be70">
-                  <ownedConstraints xsi:type="org.polarsys.capella.core.data.capellacore:Constraint"
-                      id="a51c1882-8d8e-42c6-96f3-cb7bb1cab89b" name="">
-                    <ownedSpecification xsi:type="org.polarsys.capella.core.data.information.datavalue:OpaqueExpression"
-                        id="36b8f24a-673d-4176-afd3-f1f436c13e6f">
-                      <bodies>Concussion not Recorded</bodies>
-                      <languages>capella:linkedText</languages>
-                    </ownedSpecification>
-                  </ownedConstraints>
-                </ownedTransitions>
-                <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
-                    id="f8523079-6143-4de5-b0f5-3ac04196b228" triggerDescription=""
-                    guard="#d669da20-3506-4d08-8712-191697e30d8b" source="#05c408e9-71d6-4d30-91a0-4623ee814184"
-                    target="#91d3b25e-c94c-4ef6-a855-c7d5bf52be70" effect="#6b26a353-112b-4eb0-9219-5f4025bee4ac">
-                  <ownedConstraints xsi:type="org.polarsys.capella.core.data.capellacore:Constraint"
-                      id="d669da20-3506-4d08-8712-191697e30d8b" name="">
-                    <ownedSpecification xsi:type="org.polarsys.capella.core.data.information.datavalue:OpaqueExpression"
-                        id="0affc5ba-72c5-4050-8a41-1acc3dfca4a3">
-                      <bodies>Device Determine Concuussion&#xD;
+                      id="4cf2a7ff-162d-4a70-ae53-047e8d6387ed" name="region" involvedStates="#6df20e41-170d-480b-bece-1e0a84f8a118 #91d3b25e-c94c-4ef6-a855-c7d5bf52be70 #05c408e9-71d6-4d30-91a0-4623ee814184">
+                    <ownedStates xsi:type="org.polarsys.capella.core.data.capellacommon:State"
+                        id="6df20e41-170d-480b-bece-1e0a84f8a118" name="Standby">
+                      <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
+                          id="a2a9f97f-2cc6-49b8-8608-ffb302d8d618" name="region"/>
+                    </ownedStates>
+                    <ownedStates xsi:type="org.polarsys.capella.core.data.capellacommon:State"
+                        id="91d3b25e-c94c-4ef6-a855-c7d5bf52be70" name="Monitor Activity">
+                      <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
+                          id="fa6571a0-60f1-4b90-8ee9-b982eb0614d6" name="region"/>
+                    </ownedStates>
+                    <ownedStates xsi:type="org.polarsys.capella.core.data.capellacommon:State"
+                        id="05c408e9-71d6-4d30-91a0-4623ee814184" name="Hit Received">
+                      <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
+                          id="0a153e08-f83f-423d-acd2-8f68c48f7c66" name="region"/>
+                    </ownedStates>
+                    <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                        id="db244b1f-0b24-4c48-858d-82a481e0dbb4" triggerDescription=""
+                        source="#6df20e41-170d-480b-bece-1e0a84f8a118" target="#91d3b25e-c94c-4ef6-a855-c7d5bf52be70"
+                        triggers="#7b17df23-af62-44ed-acba-7747c33550e5"/>
+                    <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                        id="9d3f53be-c781-4bb5-89ce-ce5ae8459e56" triggerDescription=""
+                        guard="#ffa86090-ba8e-46f8-9e65-6acd007a6f07" source="#91d3b25e-c94c-4ef6-a855-c7d5bf52be70"
+                        target="#05c408e9-71d6-4d30-91a0-4623ee814184" triggers="#6ebb4337-18fd-4ce5-a993-8552c796db26">
+                      <ownedConstraints xsi:type="org.polarsys.capella.core.data.capellacore:Constraint"
+                          id="ffa86090-ba8e-46f8-9e65-6acd007a6f07" name="">
+                        <ownedSpecification xsi:type="org.polarsys.capella.core.data.information.datavalue:OpaqueExpression"
+                            id="9f4001f8-8f76-4206-883a-4fa736fac626">
+                          <bodies>Activity Threshold Exceeds</bodies>
+                          <languages>capella:linkedText</languages>
+                        </ownedSpecification>
+                      </ownedConstraints>
+                    </ownedTransitions>
+                    <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                        id="92c2b15b-6d88-485e-99ac-7f4549a1951a" triggerDescription=""
+                        guard="#a51c1882-8d8e-42c6-96f3-cb7bb1cab89b" source="#05c408e9-71d6-4d30-91a0-4623ee814184"
+                        target="#91d3b25e-c94c-4ef6-a855-c7d5bf52be70" effect="#6b26a353-112b-4eb0-9219-5f4025bee4ac">
+                      <ownedConstraints xsi:type="org.polarsys.capella.core.data.capellacore:Constraint"
+                          id="a51c1882-8d8e-42c6-96f3-cb7bb1cab89b" name="">
+                        <ownedSpecification xsi:type="org.polarsys.capella.core.data.information.datavalue:OpaqueExpression"
+                            id="36b8f24a-673d-4176-afd3-f1f436c13e6f">
+                          <bodies>Concussion Recognized</bodies>
+                          <languages>capella:linkedText</languages>
+                        </ownedSpecification>
+                      </ownedConstraints>
+                    </ownedTransitions>
+                    <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                        id="f8523079-6143-4de5-b0f5-3ac04196b228" triggerDescription=""
+                        guard="#d669da20-3506-4d08-8712-191697e30d8b" source="#05c408e9-71d6-4d30-91a0-4623ee814184"
+                        target="#91d3b25e-c94c-4ef6-a855-c7d5bf52be70">
+                      <ownedConstraints xsi:type="org.polarsys.capella.core.data.capellacore:Constraint"
+                          id="d669da20-3506-4d08-8712-191697e30d8b" name="">
+                        <ownedSpecification xsi:type="org.polarsys.capella.core.data.information.datavalue:OpaqueExpression"
+                            id="0affc5ba-72c5-4050-8a41-1acc3dfca4a3">
+                          <bodies>Device Determine NOT Concussion&#xD;
 </bodies>
-                      <languages>capella:linkedText</languages>
-                    </ownedSpecification>
-                  </ownedConstraints>
-                </ownedTransitions>
+                          <languages>capella:linkedText</languages>
+                        </ownedSpecification>
+                      </ownedConstraints>
+                    </ownedTransitions>
+                  </ownedRegions>
+                </ownedStates>
                 <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
                     id="b7769520-86b6-44dc-8602-ca5fc057cffb" triggerDescription=""
-                    source="#d36efc17-2029-47ee-aa31-b183b124def3" target="#91d3b25e-c94c-4ef6-a855-c7d5bf52be70"/>
+                    source="#d36efc17-2029-47ee-aa31-b183b124def3" target="#ea28a1f0-4708-4829-97d0-95c53d6eba53"/>
+                <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                    id="5aa760d1-c560-4044-90d2-9954af784971" triggerDescription=""
+                    source="#ea28a1f0-4708-4829-97d0-95c53d6eba53" target="#6df20e41-170d-480b-bece-1e0a84f8a118"
+                    triggers="#7ce6b399-9ac1-4a1b-b0d8-408b5659bcd3"/>
+                <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                    id="70434958-4a29-4afa-9ad5-6e4600b5b21c" triggerDescription=""
+                    source="#2ad2814f-4677-4333-a6b1-244b6d9b1968" target="#ea28a1f0-4708-4829-97d0-95c53d6eba53"
+                    triggers="#95185f6a-8c82-4db9-a48c-b51e468be017"/>
               </ownedRegions>
             </ownedStateMachines>
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
