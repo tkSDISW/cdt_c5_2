@@ -9269,11 +9269,19 @@
                   id="89731a03-3831-4f32-a987-6c9c791fb9bc" name="Color" value="Black"/>
               <ownedPropertyValueGroups xsi:type="org.polarsys.capella.core.data.capellacore:PropertyValueGroup"
                   id="90e32436-563b-4e5e-b908-5ad0b395e7cb" name="Mass" summary="Mass of Related Object"
-                  description="&lt;p>The Mass of the related object.&lt;/p>&#xA;">
+                  description="&lt;p>The Mass of the related object.&lt;/p>&#xA;"
+                  appliedPropertyValueGroups="#e9922bab-6915-48d0-afca-af95232600fd">
                 <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:FloatPropertyValue"
                     id="4f6a4439-c9a8-4543-a33b-a5b0d8993857" name="Value" value="0.1"/>
                 <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:StringPropertyValue"
                     id="6f630cbf-dd9a-4269-8952-8fe2daafaf07" name="Unis" value="Kg"/>
+                <ownedPropertyValueGroups xsi:type="org.polarsys.capella.core.data.capellacore:PropertyValueGroup"
+                    id="e9922bab-6915-48d0-afca-af95232600fd" name="Mass pvg">
+                  <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:StringPropertyValue"
+                      id="82a6ab08-a26b-4c9e-aeb0-1b9eee7c3256" name="StringPropertyValue 1"/>
+                  <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:StringPropertyValue"
+                      id="6cd81977-7764-4c1c-b4a4-8a5277ce3725" name="StringPropertyValue 2"/>
+                </ownedPropertyValueGroups>
               </ownedPropertyValueGroups>
               <ownedPropertyValueGroups xsi:type="org.polarsys.capella.core.data.capellacore:PropertyValueGroup"
                   id="4f72aa95-37f4-4cfd-833b-91beb6638706" name="Cost">
