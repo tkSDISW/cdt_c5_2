@@ -9261,7 +9261,7 @@
                 id="8a1a4239-0407-43b0-8cb0-38eec5df2039" sid="8a1a4239-0407-43b0-8cb0-38eec5df2039"
                 description="&lt;!DOCTYPE html>&#xA;&lt;html>&#xA;&lt;head>&#xA;&lt;title>Sensor&lt;/title>&#xA;&lt;/head>&#xA;&lt;body>&#xA;&#xA;&lt;h1>Sensor&lt;/h1>&#xA;&#xA;&lt;p>A sensor is a device that measures specific physical properties or changes in the environment and converts them into signals that can be interpreted by an observer or a computer system. Sensors are used in various fields including engineering, science, medicine, and automation.&lt;/p>&#xA;&#xA;&lt;p>Sensors can detect and measure a wide range of parameters such as temperature, pressure, humidity, light intensity, motion, proximity, acceleration, and more. They are designed to capture and transmit data accurately and efficiently, enabling continuous monitoring and control of different systems and processes.&lt;/p>&#xA;&#xA;&lt;p>There are various types of sensors available, each designed for a specific purpose. Some common sensor types include:&lt;/p>&#xA;&#xA;&lt;ol>&#xA;&lt;li>&lt;strong>Temperature sensor:&lt;/strong> measures temperature changes.&lt;/li>&#xA;&lt;li>&lt;strong>Pressure sensor:&lt;/strong> measures changes in pressure.&lt;/li>&#xA;&lt;li>&lt;strong>Proximity sensor:&lt;/strong> detects the presence or absence of objects within a certain range.&lt;/li>&#xA;&lt;li>&lt;strong>Accelerometer:&lt;/strong> measures acceleration forces.&lt;/li>&#xA;&lt;li>&lt;strong>Light sensor:&lt;/strong> measures light intensity.&lt;/li>&#xA;&lt;li>&lt;strong>Humidity sensor:&lt;/strong> measures humidity levels.&lt;/li>&#xA;&lt;/ol>&#xA;&#xA;&lt;p>Sensors are crucial components in many electronic systems, from everyday devices like smartphones and automobiles, to complex industrial automation systems. They enable data collection, analysis, and decision-making in real-time.&lt;/p>&#xA;&#xA;&lt;p>For further information about sensors and their applications, you can refer to the following resources:&lt;/p>&#xA;&#xA;&lt;ul>&#xA;&lt;li>&lt;a href=&quot;https://www.sciencedirect.com/science/article/pii/S2405896318321972&quot;>Sensor Technologies: A Review&lt;/a>&lt;/li>&#xA;&lt;li>&lt;a href=&quot;https://www.sensorsmag.com/sensors-101/types-sensors&quot;>Sensors Magazine: Types of Sensors&lt;/a>&lt;/li>&#xA;&lt;li>&lt;a href=&quot;https://en.wikipedia.org/wiki/Sensor&quot;>Wikipedia: Sensor&lt;/a>&lt;/li>&#xA;&lt;/ul>&#xA;&#xA;&lt;/body>&#xA;&lt;/html>"
                 appliedPropertyValues="#593b17d5-eb47-4c65-bd63-652a189924fe #89731a03-3831-4f32-a987-6c9c791fb9bc"
-                appliedPropertyValueGroups="#90e32436-563b-4e5e-b908-5ad0b395e7cb"
+                appliedPropertyValueGroups="#90e32436-563b-4e5e-b908-5ad0b395e7cb #4f72aa95-37f4-4cfd-833b-91beb6638706"
                 name="Sensor" nature="NODE">
               <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:StringPropertyValue"
                   id="593b17d5-eb47-4c65-bd63-652a189924fe" name="Power Source" value="LI Rechargeable Battery"/>
@@ -9274,6 +9274,13 @@
                     id="4f6a4439-c9a8-4543-a33b-a5b0d8993857" name="Value" value="0.1"/>
                 <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:StringPropertyValue"
                     id="6f630cbf-dd9a-4269-8952-8fe2daafaf07" name="Unis" value="Kg"/>
+              </ownedPropertyValueGroups>
+              <ownedPropertyValueGroups xsi:type="org.polarsys.capella.core.data.capellacore:PropertyValueGroup"
+                  id="4f72aa95-37f4-4cfd-833b-91beb6638706" name="Cost">
+                <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:StringPropertyValue"
+                    id="edc8c210-458d-429e-a06c-b5f202d396b7" name="Units" value="$"/>
+                <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:FloatPropertyValue"
+                    id="02a941da-3486-4f6f-93f1-6c429d52b283" name="Value" value="20.0"/>
               </ownedPropertyValueGroups>
               <ownedStateMachines xsi:type="org.polarsys.capella.core.data.capellacommon:StateMachine"
                   id="3ec11ecf-d0f9-4e01-b926-2e0edc6d9360" name="StateMachine 1">
